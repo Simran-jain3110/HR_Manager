@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                bat "mvn – f(HR_Manager/HrManager/pom.xml) compile"
+                bat "mvn clean"
             }
         }
         stage('--test--') {
