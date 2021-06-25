@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                bat "mvn clean"
+                bat "mvn clean -f C:\\Users\\simranjain\\git\\repository4\\HrManager\\pom.xml"
             }
         }
         stage('--test--') {
             steps {
-                bat "mvn test"
+                bat "mvn test -f C:\\Users\\simranjain\\git\\repository4\\HrManager\\pom.xml"
             }
         }
         stage('--package--') {
             steps {
-                bat "mvn package"
+                bat "mvn package -f C:\\Users\\simranjain\\git\\repository4\\HrManager\\pom.xml"
             }
         }
     }
